@@ -12,5 +12,5 @@ if(CMAKE_BUILD_TYPE MATCHES "Debug")
     gtest_discover_tests(assignment_tests) # discovers tests by asking the compiled test executable to enumerate its tests
     add_library(assignment_lib src/assignment.c)
 else()
-    add_executable(assignment src/assignment.c tests/metadata/data.c)
+    add_executable(assignment src/assignment.c)
 endif()
